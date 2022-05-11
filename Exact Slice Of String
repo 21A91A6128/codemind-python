@@ -1,0 +1,6 @@
+#slice stores te given string with given limits
+r=input()
+v=int(input())
+k=int(input())
+l=slice(v,k+1)
+print(r[l])
