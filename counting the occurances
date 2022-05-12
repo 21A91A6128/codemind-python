@@ -1,0 +1,10 @@
+v=input()
+r=ord(input())
+l=0
+for i in range(0,len(v)):
+    if r==ord(v[k]):
+    l+=1
+if l!=0:
+  print(l)
+else:
+  print('-1')
