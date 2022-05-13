@@ -1,0 +1,11 @@
+v=input()
+k=input()
+r=-1
+for i in v:
+    r+=1
+    if i==k:
+        print('True')
+        print(r)
+        break
+else:
+    print('False')
