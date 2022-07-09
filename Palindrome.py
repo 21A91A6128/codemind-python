@@ -1,11 +1,12 @@
-v=int(input())
-t=v
-s=0
-while(v>0):
-    r=v%10
-    s=s*10+r
-    v=v//10
-if t==s:
+def rev(n):
+    s=0
+    while n:
+        s=s*10+(n%10)
+        n=n//10
+    return s
+n=int(input())
+t=rev(n)
+if(t==n):
     print('True')
 else:
     print('False')
