@@ -1,11 +1,9 @@
-v=input()
-for k in range(0,len(v)):
-    r=0
-    for j in range(0,len(v)):
-        if(v[k]==v[j] and j!=k):
-            r-=1
-    if r==0:
-        print(v[k])
+s=input()
+c=0
+for i in s:
+    if s.count(i)==1:
+        print(i)
+        c=1
         break
-else:
-    print('-1')
+if c==0:
+    print("-1")
