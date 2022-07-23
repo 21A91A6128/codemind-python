@@ -1,12 +1,7 @@
 s=list(input().split(' '))
 vow=['a','e','i','o','u']
 for i in s:
-    #print(i,end='
-')
     c=list(i)
-    #for l in c:
-        #print(l,end=':')
-    #print()
     a=[]
     for j in c:
         if j not in vow:
