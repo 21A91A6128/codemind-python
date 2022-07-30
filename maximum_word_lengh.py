@@ -1,5 +1,6 @@
-a=0
-for i in input().split():
-   if(a<=len(i)):
-       a=len(i)
+s=input().split(' ')
+a=len(min(s))
+for i in s:
+    if(a<=len(i)):
+        a=len(i)
 print(a)
