@@ -1,10 +1,9 @@
-vow=['a','e','i','o','u']
-b=0
-for i in input().split(' '):
-    a=0
+b=[]
+vow=['a','e','i','o','u','A','E','I','O','U']
+for i in (input()).split():
+    c=0
     for j in i:
         if j in vow:
-            a+=1
-    if(b<a):
-        b=a
-print(b)
+            c+=1
+    b.append(c)
+print(max(b))
