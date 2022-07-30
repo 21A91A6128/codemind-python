@@ -1,13 +1,12 @@
 vow=['a','e','i','o','u']
-a=[]
 b=[]
-for i in input():
+for i in list(input()):
     if i in vow:
-        a.append(i)
-for i in vow:
-    if i not in a:
         b.append(i)
-if len(b)==0:
-    print(0)
+b=set(b)
+if len(b)==5:
+    print('0')
 else:
-    print(*(set(b)))
+    for i in vow:
+        if i not in b:
+            print(i,end=' ')
