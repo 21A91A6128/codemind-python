@@ -1,7 +1,7 @@
-vow=['a','e','i','o','u']
-for i in input().split(' '):
-    a=0
+vow=['a','e','i','o','u','A','E','I','O','U']
+for i in (input()).split():
+    c=0
     for j in i:
         if j in vow:
-            a+=1
-    print(a,end=' ')
+            c+=1
+    print(c,end=' ')
