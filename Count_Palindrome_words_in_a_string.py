@@ -1,6 +1,5 @@
-s=input().lower()
-c=0
-for i in s.split():
+a=0
+for i in (input().lower()).split(' '):
     if i==i[::-1]:
-        c+=1
-print(c)
+        a+=1
+print(a)
