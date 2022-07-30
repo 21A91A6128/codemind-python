@@ -1,11 +1,13 @@
-v=input().lower()
-k=input().lower()
+a=list(input().lower())
+b=list(input().lower())
 c=0
-for i in v:
-    for j in k:
-        if i==j:
+if len(a)==len(b):
+    for i in a:
+        if i in b:
             c+=1
-if c==len(k) and c==len(v):
-    print(True)
+    if c==len(a):
+        print('True')
+    else:
+        print('False')
 else:
-    print(False)
+    print('False')
