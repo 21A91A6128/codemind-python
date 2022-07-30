@@ -1,7 +1,9 @@
-s=input()
+s=input().lower()
+c=0
 for i in range(26):
-    if chr(97+i) not in s and chr(65+i) not in s:
-        print("False")
-        break
+    if chr(97+i) in s:
+        c+=1
+if c==26:
+    print('True')
 else:
-    print("True")
+    print('False')
