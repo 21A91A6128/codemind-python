@@ -1,8 +1,7 @@
 _=int(input())
 a=list(map(int,input().split()))
-b=set(a)
-c=0
-for i in b:
-    if a.count(i)==i:
-        c+=1
-print(c)
+b=[]
+for i in a:
+    if i==a.count(i) and i not in b:
+        b.append(i)
+print(len(b))
