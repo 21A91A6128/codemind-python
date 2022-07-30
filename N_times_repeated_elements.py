@@ -1,15 +1,11 @@
 _=int(input())
 a=list(map(int,input().split()))
-c=int(input())
-b=set(a)
-d=[]
-e=0
-for i in b:
-    if a.count(i)==c:
-        e+=1
-        d.append(i)
-if e==0:
-    print("-1")
+n=int(input())
+b=[]
+for i in a:
+    if n==a.count(i) and i not in b:
+        b.append(i)
+if len(b)==0:
+    print(-1)
 else:
-    for i in range (len(d)):
-        print(d[i],end=' ')
+    print(*b)
