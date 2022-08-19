@@ -1,2 +1,2 @@
-for i in input().split(' '):
-    print(abs(ord(min(i))-ord(max(i))),end=' ')
+for i in input().split():
+    print(ord(max(i))-ord(min(i)),end=' ')
