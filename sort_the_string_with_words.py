@@ -1,2 +1,1 @@
-str=sorted(list(input().split(' ')))
-print(*str)
+print(*sorted((input().lower()).split(' ')))
