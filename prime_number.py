@@ -1,9 +1,9 @@
-v=int(input())
-k=0
-for j in range(1,v+1,1):
-    if v%j==0:
-        k=k+1
-if k==2:
+vk=int(input())
+l=0
+for r in range(1,vk+1):
+    if vk%r==0:
+        l+=1
+if l==2:
     print('prime')
 else:
     print('not a prime')
