@@ -1,0 +1,14 @@
+_,vk=int(input()),0
+a=list(map(int,input().split()))
+for i in range(_):
+    t=a[i]
+    j=a.index(min(a[i:]))
+    if a[i]==a[j]:
+        continue
+    if j>i:
+        a[i]=a[j]
+        a[j]=t
+        vk+=1
+    if a==sorted(a):
+        break
+print(vk)
