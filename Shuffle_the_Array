@@ -1,0 +1,8 @@
+_=int(input())
+arr=list(map(int,input().split()))
+r,vk=int(input()),[]
+v,k=arr[:r],arr[r:]
+for i in range(len(k)):
+    vk.append(v[i])
+    vk.append(k[i])
+print(*vk)
