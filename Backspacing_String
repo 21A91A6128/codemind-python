@@ -1,0 +1,11 @@
+def bss(vk):
+    r=[]
+    for c in vk:
+        if c!='#':
+            r.append(c)
+        else:
+            r=r[:-1]
+    return r
+s=input()
+t=input()
+print(bss(s)==bss(t))
