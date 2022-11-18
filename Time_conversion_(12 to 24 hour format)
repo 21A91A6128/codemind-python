@@ -1,0 +1,14 @@
+s,vk=input(),''
+if s[-2:]=='AM':
+    if s[:2]=='12':
+        vk+='00:'
+    else:
+        vk+=s[:2]+':'
+    vk+=str(s[3:6])
+else:
+    if s[:2]=='12':
+        vk+='12:'
+    else:
+        vk+=str(int(s[:2])+12)+':'
+    vk+=str(s[3:6])
+print(vk[:len(vk)-1])
