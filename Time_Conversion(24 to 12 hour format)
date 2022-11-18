@@ -1,0 +1,16 @@
+s,vk=input(),''
+if int(s[:2])<=12:
+    if s[:2]=='00':
+        vk+='12:'
+    else:
+        vk+=s[:2]+':'
+    if s[:2]=='12':
+        vk+=s[3:5]+" PM"
+    else:
+        vk+=s[3:5]+" AM"
+else:
+    if int(s[:2])<22:
+        vk+='0'+str(int(s[:2])-12)+':'+s[3:5]+" PM"
+    else:
+        vk+=str(int(s[:2])-12)+':'+s[3:5]+" PM"
+print(vk)
